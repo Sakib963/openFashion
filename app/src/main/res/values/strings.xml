@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Open Fashion</string>
+
+    <!--  Sign Up Page Text  -->
+    <string name="sign_up_text">Sign Up</string>
+    <string name="your_email_hint">Your Email Address</string>
+    <string name="your_email_text">Your Email.*</string>
+    <string name="password_text">Password*</string>
+    <string name="password_hint_text">Please give 6 characters long password</string>
+    <string name="retype_password_text">Retype Password*</string>
+
+    <string name="retype_password_hint_text">Retype Your Password</string>
+    <string name="submit_text">Submit</string>
+
+    <!--  Sign Up Information Text  -->
+    <string name="name_text">Name*</string>
+    <string name="name_hint_text">Your Full Name</string>
+    <string name="email_hint_text">Your Email</string>
+    <string name="email_text">Email*</string>
+    <string name="phone_no_text">Phone Number</string>
+    <string name="phone_no_hint">Your Phone Number</string>
+    <string name="photo_url_text">Photo URL</string>
+    <string name="photo_url_hint">Put The Link Of Your Photo</string>
+
+    <!-- Welcome Activity Text -->
+    <string name="welcome_title">Welcome to\nOpen Fashion</string>
+    <string name="welcome_sub_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor.</string>
+    <string name="login_text">Login</string>
+
+    <!-- Login Activity Text -->
+    <string name="password_input_hint_text">Please Enter Your Password</string>
+    <string name="checkbox_text">Remember Me</string>
+
+    <!--  Main Activity Text  -->
+    <string name="logout_text">Log Out</string>
+    <string name="explore_text">Explore Collection</string>
+    <string name="banner_text">Luxury\n Fashion\n&amp; Accessories</string>
+
+    <string name="OpenDrawer">Open navigation drawer</string>
+    <string name="CloseDrawer">Close navigation drawer</string>
+
+    <string name="new_arrival_text">New Arrival</string>
+    <string name="add_to_basket_text">Add to basket</string>
+
+
+    <!--  Contact Page Texts  -->
+    <string name="contact_us_text">Contact Us</string>
+    <string name="contact_us_details_text">Need an ASAP answer? Contact us via chat, 24/7! For existing furniture orders, please call us.</string>
+    <string name="contact_with_us_button_text">Chat with us</string>
+
+    <string name="message_details_text">You can text us at 0160000000 – or click on the “text us” link below on your mobile device. Please allow the system to acknowledge a simple greeting (even “Hi” will do!) before providing your question/order details. Consent is not required for any purchase. Message and data rates may apply. Text messaging may not be available via all carriers.</string>
+    <string name="text_us_button_text">text us</string>
+
+    <string name="private_message_details">To send us a private or direct message, like @Open Fashion on Facebook or follow us on Twitter. We’ll get back to you ASAP. Please include your name, order number, and email address for a faster response!</string>
+
+    <string name="email_address_text">walid@openfashion.com</string>
+    <string name="phone_number_contact_page_text">+880166564664</string>
+    <string name="time_contact_page_text">08:00 - 22:00 - Everyday</string>
+    <string name="copyright_text">Copyright© OpenUI All Rights Reserved.</string>
+
+    <!--  Blog Page Texts  -->
+    <string name="blog_text">Blog</string>
+    <string name="blog_post_one_title">2021 Style Guide: The Biggest
+Fall Trends</string>
+    <string name="fashion_hashtag">#Fashion</string>
+    <string name="tips_hashtag">#Tips</string>
+    <string name="days_ago_text">4 days ago</string>
+
+    <string name="blog_post_section_one_text">You guys know how much I love mixing high and low-end – it’s the best way to get the most bang for your buck while still elevating your wardrobe. The same goes for handbags! And honestly they are probably the best pieces to mix and match. I truly think the key to completing a look is with a great bag and I found so many this year that I wanted to share a round-up of my most worn handbags.</string>
+
+    <string name="blog_post_section_two_text">I found this Saint Laurent canvas handbag this summer and immediately fell in love. The neutral fabrics are so beautiful and I like how this handbag can also carry into fall. The mini Fendi bucket bag with the sheer fabric is so fun and such a statement bag. Also this DeMellier off white bag is so cute to carry to a dinner with you or going out, it’s small but not too small to fit your phone and keys still.</string>
+
+    <string name="blog_post_section_three_text">Posted by OpenFashion | 3 Days ago</string>
+
+    <!--  Admin Dashboard Texts  -->
+    <string name="all_products_text">All Products</string>
+    <string name="add_products_text">Add A Product</string>
+    <string name="orders_text">Orders</string>
+    <string name="admin_dashboard_text">Admin Dashboard</string>
+
+    <!-- Add A Product -->
+    <string name="product_name_text">Product Name</string>
+    <string name="product_name_hint">Enter Product Name</string>
+    <string name="product_price_text">Product Price</string>
+    <string name="product_price_hint">$ Enter Product Price</string>
+    <string name="available_quantity_text">Available Quantity</string>
+    <string name="available_quantity_hint">How many pieces available?</string>
+    <string name="rating_text">Rating</string>
+    <string name="rating_text_hint">Rating (out of 5)</string>
+    <string name="upload_image_text">Upload Image</string>
+    <string name="upload_image_hint">Click To Open Gallery</string>
+    <string name="image_url_text">Image URL</string>
+    <string name="product_description_text">Product Description</string>
+    <string name="product_description_hint">Enter a short description</string>
+
+    <!-- All Products -->
+    <string name="total_products_text">Total Products: 0</string>
+    <!-- Product Admin -->
+    <string name="product_details_text">Product Details</string>
+    <string name="update_text">Update</string>
+    <string name="delete_text">Delete</string>
+
+    <!--  Cart Item Text  -->
+    <string name="cart_item_text">Cart Items</string>
+    <string name="no_item_text">No Item Found</string>
+    <string name="checkout">Checkout</string>
+
+    <!--  Checkout Texts  -->
+    <string name="sub_total_text">Sub Total: $</string>
+    <string name="delivery_charge_text">Delivery Charge: $50</string>
+    <string name="total_text">Total: $</string>
+    <string name="add_shipping_address_text">Add Shipping Address</string>
+    <string name="address_text">Address</string>
+    <string name="address_hint">Enter Your Shipping Address</string>
+    <string name="phone_text">Phone Number</string>
+    <string name="phone_hint">Enter Your Phone Number</string>
+
+</resources>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/drawer_layout"
+    tools:context=".BlogPostActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_layout"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/header_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingTop="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:background="@color/off_white"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/hamburger_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hamburger"
+                    android:clickable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/header_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/header_logo"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hamburger_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/post_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingStart="20dp"
+               android:paddingEnd="20dp"
+               app:layout_constraintTop_toBottomOf="@id/header_section"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               >
+                <!-- Thumbnail -->
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/thumbnail_picture"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/blog_post_four_thumbnail"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"/>
+
+               <!-- Title -->
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/blog_post_title"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/blog_post_one_title"
+                   android:textSize="18sp"
+                   android:textAllCaps="true"
+                   android:layout_marginBottom="5dp"
+                   android:textColor="@color/black"
+                   app:layout_constraintTop_toBottomOf="@+id/thumbnail_picture"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   />
+
+               <!-- Section One -->
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/section_one_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/blog_post_section_one_text"
+                   android:textColor="@color/black"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="5dp"
+                   app:layout_constraintTop_toBottomOf="@+id/blog_post_title"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   />
+
+               <!-- blog image -->
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:id="@+id/blog_picture"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/blog_post_image"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginTop="10dp"
+                   app:layout_constraintTop_toBottomOf="@id/section_one_text"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"/>
+
+               <!-- Section Two -->
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/section_two_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/blog_post_section_two_text"
+                   android:textColor="@color/black"
+                   android:layout_marginTop="10dp"
+                   app:layout_constraintTop_toBottomOf="@+id/blog_picture"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   />
+
+               <!-- Section Three -->
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/section_three_text"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/blog_post_section_three_text"
+                   android:textColor="@color/black"
+                   android:layout_marginTop="10dp"
+                   app:layout_constraintTop_toBottomOf="@+id/section_two_text"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   />
+
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/hashtag_one"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/button_outline"
+                   android:padding="5dp"
+                   android:textSize="12sp"
+                   android:layout_marginTop="10dp"
+                   android:text="@string/fashion_hashtag"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/section_three_text"
+                   />
+
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/hashtag_two"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/button_outline"
+                   android:padding="5dp"
+                   android:layout_marginStart="5dp"
+                   android:layout_marginTop="10dp"
+                   android:textSize="12sp"
+                   android:text="@string/tips_hashtag"
+                   app:layout_constraintStart_toEndOf="@+id/hashtag_one"
+                   app:layout_constraintTop_toBottomOf="@+id/section_three_text"
+                   />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Twitter Instagram YouTube Icons -->
+            <LinearLayout
+                android:id="@+id/icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/post_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/black"
+                    android:src="@drawable/twitter" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="45dp"
+                    android:tint="@color/black"
+                    android:src="@drawable/instagram" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/black"
+                    android:src="@drawable/youtube" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/underline_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/underline"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@id/icon_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+            <!-- email address -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/email_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address_text"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/underline_two"
+                />
+            <!-- phone number  -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/phone_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/phone_number_contact_page_text"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email_address_text"
+                />
+            <!-- available time -->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_contact_page_text"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phone_number_text"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/underline_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/underline"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@id/time_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <!--      Footer      -->
+            <include
+                layout="@layout/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/underline_three" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/navigation_items"
+        >
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "385650104054",
+    "project_id": "open-fashion-84572",
+    "storage_bucket": "open-fashion-84572.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385650104054:android:887d5fdbf321b89e88bed7",
+        "android_client_info": {
+          "package_name": "com.example.openfashion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385650104054-bs80a7noeu8m6l0llo1ehhmodq91hudr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.openfashion",
+            "certificate_hash": "198a4dc8755a07fd6ad9a05c8ae62ff2bc155f77"
+          }
+        },
+        {
+          "client_id": "385650104054-9psd9jagv46f9mg3829v9du8gv1r5fu7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYf9MOuJ8bynSWX0wE-oXCGox81HSE1wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385650104054-9psd9jagv46f9mg3829v9du8gv1r5fu7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
